@@ -1,0 +1,47 @@
+[   
+    {
+        "id": "A",
+        "label": "Начало",
+        "type": "action"
+    },
+    {
+        "id": "B",
+        "label": "Условие 1",
+        "type": "condition"
+    },
+    {
+        "id": "C",
+        "label": "Действие 1",
+        "type": "action"
+    },
+    {
+        "id": "D",
+        "label": "Действие 2",
+        "type": "action"
+    },
+    {
+        "id": "E",
+        "label": "Действие 3",
+        "type": "action"
+    },
+    {
+        "id": "F",
+        "label": "Действие 4",
+        "type": "action"
+    },
+    {
+        "id": "G",
+        "label": "Условие 2",
+        "type": "condition"
+    },
+    {
+        "id": "H",
+        "label": "Результат",
+        "type": "action"
+    },
+    {
+        "id": "I",
+        "label": "Не связанный",
+        "type": "action"
+    }
+]

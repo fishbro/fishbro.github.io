@@ -1,0 +1,168 @@
+/* Put here some special styles for individual pages */
+
+/* 2018.04.17 */
+/* /serv/develop/vnedrenie-oplaty-na-sayte-internet-ekvayring/ */
+
+.body-vnedrenie-oplaty-na-sayte-internet-ekvayring section.section.payment-options ul.default-list2.online-kas li{
+    counter-increment:item;
+}
+.body-vnedrenie-oplaty-na-sayte-internet-ekvayring section.section.payment-options ul.default-list2.online-kas li span{
+    line-height: 80px;
+    padding-left: 74px;
+    font-size: 18px;
+}
+.body-vnedrenie-oplaty-na-sayte-internet-ekvayring section.section.payment-options ul.default-list2.online-kas li:after{
+    position: absolute;
+    content: counters(item, '.') '';
+    top: -8px;
+    left: 9px;
+    font-family: 'ProximaNova_Bold';
+    font-size: 98px;
+    line-height: 100px;
+    color: rgb(51, 104, 237);
+    background: none;
+    text-align: right;
+    width: 52px;
+    height: initial;
+}
+.body-vnedrenie-oplaty-na-sayte-internet-ekvayring section.section.list-of-popular-banks-acquirers .us-partner .block-partner p,
+.body-vnedrenie-oplaty-na-sayte-internet-ekvayring section.section.list-of-popular-payment-aggregators .us-partner .block-partner p{
+    line-height: 22px;
+}
+.body-vnedrenie-oplaty-na-sayte-internet-ekvayring section.section.list-of-popular-banks-acquirers .us-partner .block-partner p:first-child,
+.body-vnedrenie-oplaty-na-sayte-internet-ekvayring section.section.list-of-popular-payment-aggregators .us-partner .block-partner p:first-child{
+    font-size: 18px;
+}
+.body-vnedrenie-oplaty-na-sayte-internet-ekvayring section.section.list-of-popular-banks-acquirers .us-partner .block-partner p span.partner-n,
+.body-vnedrenie-oplaty-na-sayte-internet-ekvayring section.section.list-of-popular-payment-aggregators .us-partner .block-partner p span.partner-n{
+    font-weight: 900;
+    font-size: 20px;
+}
+section.top-vnedrenie-oplaty-na-sayte-internet-ekvayring br{
+    display: none;
+}
+section.top-vnedrenie-oplaty-na-sayte-internet-ekvayring .description {
+    max-width: 860px;
+    text-align: center;
+}
+section.top-vnedrenie-oplaty-na-sayte-internet-ekvayring .description p {
+    margin: 0px;
+}
+section.top-vnedrenie-oplaty-na-sayte-internet-ekvayring + .breadcrumbs{
+    margin-top: 24px;
+}
+.body-vnedrenie-oplaty-na-sayte-internet-ekvayring section{
+    padding: 0px;
+}
+.body-vnedrenie-oplaty-na-sayte-internet-ekvayring section .text-block.type1 {
+    max-width: 1126px;
+}
+.body-vnedrenie-oplaty-na-sayte-internet-ekvayring section.section.razovaya-optimizaciya-section ul {
+    padding: 17px 0px 0px;
+}
+.body-vnedrenie-oplaty-na-sayte-internet-ekvayring section.section.advantages-of-acquiring-for-sellers .inline-block,
+.body-vnedrenie-oplaty-na-sayte-internet-ekvayring section.section.advantages-of-acquiring-for-customers .inline-block {
+    max-width: 1124px;
+    margin: 50px auto 0px;
+}
+.body-vnedrenie-oplaty-na-sayte-internet-ekvayring section.section.advantages-of-acquiring-for-sellers .inline-block img + p,
+.body-vnedrenie-oplaty-na-sayte-internet-ekvayring section.section.advantages-of-acquiring-for-customers .inline-block img + p {
+    margin: 16px 0px 6px;
+}
+.body-vnedrenie-oplaty-na-sayte-internet-ekvayring section.section.advantages-of-acquiring-for-customers{
+    padding-bottom: 46px;
+}
+.body-vnedrenie-oplaty-na-sayte-internet-ekvayring section.section.payment-options{
+    padding-bottom: 20px;
+}
+.body-vnedrenie-oplaty-na-sayte-internet-ekvayring section.section.payment-options ul.default-list2.online-kas{
+    max-width: 590px;
+    margin: 5px auto 55px;
+}
+.body-vnedrenie-oplaty-na-sayte-internet-ekvayring section.section.list-of-popular-banks-acquirers,
+.body-vnedrenie-oplaty-na-sayte-internet-ekvayring section.section.list-of-popular-payment-aggregators{
+    padding-bottom: 20px;
+}
+.body-vnedrenie-oplaty-na-sayte-internet-ekvayring section.section.list-of-popular-banks-acquirers .center + p,
+.body-vnedrenie-oplaty-na-sayte-internet-ekvayring section.section.list-of-popular-payment-aggregators .center + p{
+    margin-top: 32px;
+}
+.body-vnedrenie-oplaty-na-sayte-internet-ekvayring section.section.list-of-popular-banks-acquirers .us-partner .block-left img,
+.body-vnedrenie-oplaty-na-sayte-internet-ekvayring section.section.list-of-popular-payment-aggregators .us-partner .block-left img{
+    max-width: 95%;
+}
+.body-vnedrenie-oplaty-na-sayte-internet-ekvayring section.section.list-of-popular-banks-acquirers .us-partner .block-left,
+.body-vnedrenie-oplaty-na-sayte-internet-ekvayring section.section.list-of-popular-payment-aggregators .us-partner .block-left{
+    width: 25%;
+}
+.body-vnedrenie-oplaty-na-sayte-internet-ekvayring section.section.list-of-popular-banks-acquirers .us-partner .block-right,
+.body-vnedrenie-oplaty-na-sayte-internet-ekvayring section.section.list-of-popular-payment-aggregators .us-partner .block-right{
+    width: 75%;
+}
+.body-vnedrenie-oplaty-na-sayte-internet-ekvayring section.section.list-of-popular-banks-acquirers .us-partner .block-partner ul,
+.body-vnedrenie-oplaty-na-sayte-internet-ekvayring section.section.list-of-popular-payment-aggregators .us-partner .block-partner ul{
+    margin-top: 16px;
+    margin-bottom: 20px;
+    padding-left: 15px;
+}
+@media screen and (min-width: 768px) {
+    section.top-vnedrenie-oplaty-na-sayte-internet-ekvayring h2,
+    section.top-vnedrenie-oplaty-na-sayte-internet-ekvayring .h2 {
+        font-size: 46px;
+        margin: 10px 0px 30px 0px;
+    }
+    .body-vnedrenie-oplaty-na-sayte-internet-ekvayring section.section.advantages-of-acquiring-for-sellers h2 {
+        font-size: 32px;
+        margin: 16px 0px 13px;
+    }
+    .body-vnedrenie-oplaty-na-sayte-internet-ekvayring section.section.advantages-of-acquiring-for-customers h2 {
+        font-size: 32px;
+        margin: 26px 0px 13px;
+    }
+    .body-vnedrenie-oplaty-na-sayte-internet-ekvayring section.section.payment-options h2{
+        margin-top: 47px;
+        font-size: 47px;
+    }
+    .body-vnedrenie-oplaty-na-sayte-internet-ekvayring section.section.payment-options h2 + .text-block{
+        text-align: center;
+        font-size: 22px;
+    }
+    .body-vnedrenie-oplaty-na-sayte-internet-ekvayring section.section.list-of-popular-banks-acquirers h2,
+    .body-vnedrenie-oplaty-na-sayte-internet-ekvayring section.section.list-of-popular-payment-aggregators h2{
+        font-size: 32px;
+        margin-top: 7px;
+        margin-bottom: 18px;
+    }
+    .body-vnedrenie-oplaty-na-sayte-internet-ekvayring section.section.list-of-popular-banks-acquirers h2 + p,
+    .body-vnedrenie-oplaty-na-sayte-internet-ekvayring section.section.list-of-popular-payment-aggregators h2 + p{
+        margin: 0px auto 58px;
+        font-size: 22px;
+        max-width: 766px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .body-vnedrenie-oplaty-na-sayte-internet-ekvayring section.section.payment-options ul.default-list2.online-kas li span {
+        line-height: 32px;
+        min-height: 60px;
+    }
+    .body-vnedrenie-oplaty-na-sayte-internet-ekvayring section.section.advantages-of-acquiring-for-sellers .inline-block .inline-inner,
+    .body-vnedrenie-oplaty-na-sayte-internet-ekvayring section.section.advantages-of-acquiring-for-customers .inline-block .inline-inner {
+        width: 100%;
+    }
+    .body-vnedrenie-oplaty-na-sayte-internet-ekvayring section.section.list-of-popular-banks-acquirers .us-partner .block-left,
+    .body-vnedrenie-oplaty-na-sayte-internet-ekvayring section.section.list-of-popular-payment-aggregators .us-partner .block-left{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .body-vnedrenie-oplaty-na-sayte-internet-ekvayring section.section.list-of-popular-banks-acquirers .us-partner .block-right,
+    .body-vnedrenie-oplaty-na-sayte-internet-ekvayring section.section.list-of-popular-payment-aggregators .us-partner .block-right{
+        width: 100%;
+    }
+    .body-vnedrenie-oplaty-na-sayte-internet-ekvayring section.section.advantages-of-acquiring-for-customers,
+    .body-vnedrenie-oplaty-na-sayte-internet-ekvayring section.section.payment-options {
+        padding-top: 30px;
+    }
+}
+/* /serv/develop/vnedrenie-oplaty-na-sayte-internet-ekvayring/ */
+/* 2018.04.17 */

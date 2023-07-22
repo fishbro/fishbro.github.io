@@ -1,0 +1,45 @@
+/* put your custom styles here */
+
+
+/* fix videos previews */
+.body-reklama-na-youtube section.primery-rolikov .videos-wrp .item a .img {
+    background-position: center;
+}
+
+
+/* popup form style */
+#orderPopup{
+    max-width: 100%;
+    width: 680px;
+}
+#orderPopup .question-form .row{
+    max-width: 100%;
+}
+#orderPopup .question-form input[type=text],
+#orderPopup .question-form textarea{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(203, 203, 203);
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    box-shadow: inset 0 2px 3px rgba(146, 103, 103, .14);
+    background-image: none;
+}
+@media only screen and (max-width: 480px){
+    .question-form {
+        padding: 0px;
+    }
+}
+
+
+/* make it clown */
+.body-reklama-na-youtube section.scenarii-reklamnyh-pokazov .google-like-carousel-wrap .google-like-carousel .owl-nav>button:before {
+    background-color: rgb(255, 2, 4);
+    color: rgb(255, 255, 255);
+}
+.body-reklama-na-youtube section.scenarii-reklamnyh-pokazov .google-like-carousel-wrap .google-like-carousel .owl-nav .owl-prev:before {
+    background-image: url(../images/youtube/white-arrow-left.png);
+}
+.body-reklama-na-youtube section.scenarii-reklamnyh-pokazov .google-like-carousel-wrap .google-like-carousel .owl-nav .owl-next:before {
+    background-image: url(../images/youtube/white-arrow-right.png);
+}

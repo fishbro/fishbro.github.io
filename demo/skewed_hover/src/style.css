@@ -1,0 +1,64 @@
+/* MENU */
+.float-bg,
+.float-bg .decor,
+.float-bg .decor-l,
+.float-bg .decor-r{
+    height: 78px;
+    position: absolute;
+}
+.float-bg{
+    top: -4px!important;
+    opacity: 0;
+    box-sizing: content-box;
+    min-width: 175px;
+    transition: all 0.5s;
+}
+.float-bg.show{
+    opacity: 1;
+}
+.float-bg .decor,
+.float-bg .decor-l,
+.float-bg .decor-r{
+    background-image: url('../images/custom/menu-hover-transparent.png');
+    top: 0px;
+    transition: transform 0.5s;
+}
+.float-bg .decor{
+    background-position: 0px -78px;
+    background-repeat: repeat-x;
+    left: 78px;
+    right: 78px;
+}
+.float-bg .decor-l{
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    width: 78px;
+    left: 39px;
+
+    -ms-transform: skewX(10deg); /* IE 9 */
+    -webkit-transform: skewX(10deg); /* Safari */
+    transform: skewX(10deg);
+}
+.float-bg .decor-r{
+    background-repeat: no-repeat;
+    background-position: 0px -156px;
+    width: 78px;
+    right: 39px;
+
+    -ms-transform: skewX(-18deg); /* IE 9 */
+    -webkit-transform: skewX(-18deg); /* Safari */
+    transform: skewX(-18deg);
+}
+
+.float-bg .decor:before,
+.float-bg .decor-l:before,
+.float-bg .decor-r:before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 4px;
+    bottom: 5px;
+    left: 4px;
+    right: 6px;
+    background: #cbdb2b;
+}

@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="user-scalable=0, initial-scale=1.00, width=device-width"
+        />
+        <title>T2 Game | dashboard</title>
+
+
+
+<style type="text/css">
+    
+body{
+    background-color: #0d2036;
+    margin: 0;
+    padding: 0;
+}
+
+body .main-wrapper {
+    width: 1280px;
+    height: 640px;
+    position: relative;
+    margin: 0 auto;
+    background: red;
+    margin-top:  10%;
+}
+
+.screen-layer.dashboard{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0; top: 0;
+    background: green;
+    overflow: hidden;
+}
+
+
+.screen-content .screen-layer.enter{
+    transition: transform 150ms;
+}
+.screen-content .screen-layer.sl01{
+    display: block;
+    width:  2560px; height: 640px;
+    position: absolute; left: -640px; top: 0;
+    background-image: url("rc/img/layer1@2x.jpg");
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /*transform:  translateX(-640px);*/
+}
+.screen-content .screen-layer.sl02{
+    display: block;
+    width:  2560px; height: 640px;
+    position: absolute; left: -640px; top: 0;
+    background-image: url("rc/img/layer2@2x.png");
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /*transform:  translateX(-640px);*/
+}
+.screen-content .screen-layer.sl03{
+    display: block;
+    width:  2560px; height: 640px;
+    position: absolute; left: -640px; top: 0;
+    background-image: url("rc/img/layer3@2x.png");
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /*transform:  translateX(-640px);*/
+}
+.screen-content .screen-layer.sl04{
+    display: block;
+    width:  2560px; height: 640px;
+    position: absolute; left: -640px; top: 0;
+    background-image: url("rc/img/layer4@2x.png");
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /*transform:  translateX(-640px);*/
+}
+.screen-content .screen-layer.sl05{
+    display: block;
+    width:  2560px; height: 640px;
+    position: absolute; left: -640px; top: 0;
+    background-image: url("rc/img/layer5@2x.png");
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /*transform:  translateX(-640px);*/
+}
+.screen-content .screen-layer.sl06{
+    display: block;
+    width:  2560px; height: 640px;
+    position: absolute; left: -640px; top: 0;
+    background-image: url("rc/img/layer6@2x.png");
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /*transform:  translateX(-640px);*/
+}
+.screen-content .screen-layer.sl07{
+    display: block;
+    width:  2560px; height: 640px;
+    position: absolute; left: -640px; top: 0;
+    background-image: url("rc/img/layer7@2x.png");
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /*transform:  translateX(-640px);*/
+}
+.screen-content .screen-layer.iconsTb{
+    display: block;
+    width:  805px; height: 77px;
+    position: absolute; left: 237px; bottom: 0;
+    background-image: url("rc/img/layer_icons@2x.png");
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.screen-content .screen-layer .db-obj{
+    display: block; width: 10px; height: 10px;
+    position: absolute; left: 0; top: 0;
+}
+.screen-content .screen-layer .db-obj .db-obj__img{
+    display: block;
+    width: 100%; height: 100%;
+    position: relative;
+    background-image: url('rc/img/db_summon@2x.png');
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.screen-content .screen-layer .db-obj.summon{
+    width: 175px; height: 173px;
+    left: 1058px;
+    top: 342px;
+}
+.screen-content .screen-layer .db-obj.summon .db-obj__img{
+    background-image: url('rc/img/db_summon@2x.png');
+}
+
+.screen-content .screen-layer .db-obj.shop{
+    width: 194px; height: 190px;
+    left: 1678px;
+    top: 363px;
+}
+.screen-content .screen-layer .db-obj.shop .db-obj__img{
+    background-image: url('rc/img/db_shop@2x.png');
+}
+
+.screen-content .screen-layer .db-obj.arena{
+    width: 437px; height: 320px;
+    left: 578px;
+    top: 233px;
+}
+.screen-content .screen-layer .db-obj.arena .db-obj__img{
+    background-image: url('rc/img/db_arena@2x.png');
+}
+
+.screen-content .screen-layer .db-obj.craft{
+    width: 226px; height: 218px;
+    left: 1335px;
+    top: 326px;
+}
+.screen-content .screen-layer .db-obj.craft .db-obj__img{
+    background-image: url('rc/img/db_craft@2x.png');
+}
+
+.screen-content .screen-layer .db-obj.campaign{
+    width: 244px; height: 373px;
+    left: 1147px;
+    top: 10px;
+}
+.screen-content .screen-layer .db-obj.campaign .db-obj__img{
+    background-image: url('rc/img/db_campaign@2x.png');
+}
+
+.screen-content .screen-layer .db-obj.castle{
+    width: 119px; height: 416px;
+    left: 1710px;
+    top: 0px;
+}
+.screen-content .screen-layer .db-obj.castle .db-obj__img{
+    background-image: url('rc/img/db_castle@2x.png');
+}
+
+.screen-content .screen-layer .db-obj.fountain{
+    width: 197px; height: 239px;
+    left: 890px;
+    top: 50px;
+}
+.screen-content .screen-layer .db-obj.fountain .db-obj__img{
+    background-image: url('rc/img/db_fountain@2x.png');
+}
+
+.screen-content .screen-layer .db-obj.crusade{
+    width: 177px; height: 266px;
+    left: 1460px;
+    top: 10px;
+}
+.screen-content .screen-layer .db-obj.crusade .db-obj__img{
+    background-image: url('rc/img/db_crusade@2x.png');
+}
+.screen-content .screen-layer .db-obj .db-obj__title{
+    display: inline-block; width: 192px; height: 44px;
+    position: absolute; left: 50%; bottom:0;
+    text-align: center;
+    background-image: url('rc/img/db-title__blue@2x.png');
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px; 
+    color: #fff;
+    font-weight: bold;
+    line-height: 34px;
+    transform: translateX(-50%);
+}
+.screen-content .screen-layer .db-obj.campaign .db-obj__title{
+    left: 56%; bottom: 35px;
+}
+.screen-content .screen-layer .db-obj.castle .db-obj__title{
+    bottom: 80px;
+}
+.screen-content .screen-layer .db-obj.arena .db-obj__title{
+    left: 62%;    bottom: 60px;
+}
+.screen-content .screen-layer .db-obj.summon .db-obj__title{
+    bottom: -45px;
+}
+.screen-content .screen-layer .db-obj.fountain .db-obj__title{
+    bottom: 130px;
+}
+</style>
+
+
+
+    <script src="rc/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        var transitionend = 'transitionend transitionEnd webkitTransitionEnd msTransitionEnd';
+        var animationend = 'animationend animationEnd webkitAnimationEnd msAnimationEnd';
+
+        // $(document).ready(function () {
+
+        //     // var dmSave = 0;
+        //     const s = $('.screen-layer');
+        //     const m = $('.main-wrapper');
+        //     const w = s.width();
+        //     /*console.log( m.offset().left );
+        //     console.log( s.position().left );*/
+
+        //     $(s).on('mouseenter', function(ev){
+        //         // console.log("ENTER");
+        //         $(s).addClass('enter');
+        //         // var leftX = m.offset().left + s.position().left;
+        //         // var dx = ev.screenX - leftX;
+        //         // var dm = dx - w/2;
+        //         // dm = -dm;
+        //         // const mult = 2;
+        //         // $('.screen-layer.sl07').css('transform', 'translateX('+ parseInt( dm / 1 ) +'px)');
+        //         // $('.screen-layer.sl06').css('transform', 'translateX('+ parseInt( dm / 3*mult ) +'px)');
+        //         // $('.screen-layer.sl05').css('transform', 'translateX('+ parseInt( dm / 5*mult ) +'px)');
+        //         // $('.screen-layer.sl04').css('transform', 'translateX('+ parseInt( dm / 11*mult ) +'px)');
+        //         // $('.screen-layer.sl03').css('transform', 'translateX('+ parseInt( dm / 25*mult ) +'px)');
+        //         // $('.screen-layer.sl02').css('transform', 'translateX('+ parseInt( dm / 50*mult ) +'px)');
+        //         // $('.screen-layer.sl01').css('transform', 'translateX('+ parseInt( dm / 100*mult ) +'px)');
+
+        //         // dmSave = 0;
+        //         // $(s).on('mousemove', screenMove);
+        //         // setTimeout(function(){ 
+        //         //     $(s).removeClass('enter');
+        //         // }, 150);
+
+
+        //         var leftX = m.offset().left + s.position().left;
+        //         var dx = ev.screenX - leftX;
+        //         var dm = dx - w/2;
+
+        //         $('.screen-layer.sl01').on(transitionend, function(){
+        //             $(s).removeClass('enter');
+        //             $('.screen-layer.sl01').off(transitionend);
+        //             $(s).on('mousemove', screenMove);
+        //         });
+        //         posUpdate( -dm );
+        //     })
+
+        //     function posUpdate( dm ){
+        //         // $('.screen-layer.sl07').css('transform', 'translateX('+ parseInt( dm / 1 ) +'px)');
+        //         // $('.screen-layer.sl06').css('transform', 'translateX('+ parseInt( dm / 2 ) +'px)');
+        //         // $('.screen-layer.sl05').css('transform', 'translateX('+ parseInt( dm / 4 ) +'px)');
+        //         // $('.screen-layer.sl04').css('transform', 'translateX('+ parseInt( dm / 6 ) +'px)');
+        //         // $('.screen-layer.sl03').css('transform', 'translateX('+ parseInt( dm / 10 ) +'px)');
+        //         // $('.screen-layer.sl02').css('transform', 'translateX('+ parseInt( dm / 20 ) +'px)');
+        //         // $('.screen-layer.sl01').css('transform', 'translateX('+ parseInt( dm / 40 ) +'px)');
+        //         $('.screen-layer.sl07').css('transform', 'translateX('+ parseInt( dm / 1 ) +'px)');
+        //         $('.screen-layer.sl06').css('transform', 'translateX('+ parseInt( dm / 4 ) +'px)');
+        //         $('.screen-layer.sl05').css('transform', 'translateX('+ parseInt( dm / 10 ) +'px)');
+        //         $('.screen-layer.sl04').css('transform', 'translateX('+ parseInt( dm / 20 ) +'px)');
+        //         $('.screen-layer.sl03').css('transform', 'translateX('+ parseInt( dm / 50 ) +'px)');
+        //         $('.screen-layer.sl02').css('transform', 'translateX('+ parseInt( dm / 150 ) +'px)');
+        //         $('.screen-layer.sl01').css('transform', 'translateX('+ parseInt( dm / 300 ) +'px)');
+        //         // $(s).removeClass('enter');
+        //     }
+
+        //     function screenMove(ev){
+        //         // console.log("MOVE: " + ev.offsetX);
+        //         var leftX = m.offset().left + s.position().left;
+        //         var dx = ev.screenX - leftX;
+        //         var dm = dx - w/2;
+        //         // console.log("MOVE: " + dm);
+        //         // var sign = dm / Math.abs(dm);
+        //         // if(Math.abs(dm) > Math.abs(dmSave) + 15){
+        //         //     dm = sign * (Math.abs(dmSave) + 15);
+        //         //     // console.log("MOVE1 ", dmSave, dm);
+        //         // }
+        //         posUpdate( -dm );
+        //         dmSave = dm;
+        //     }
+        //     $(s).on('mouseleave', function(ev){
+        //         // $('.loc-layer-00').on(transitionend, function(){
+        //         //     $('.loc-layer-00, .loc-layer-01, .loc-layer-02').removeClass('restore');
+        //         //     $('.loc-layer-00').off(transitionend);
+        //         // });
+        //         // $('.loc-layer-00, .loc-layer-01, .loc-layer-02').addClass('restore');
+        //         // $('.loc-layer-02').css('transform', 'translateX(0)');
+        //         // $('.loc-layer-01').css('transform', 'translateX(0)');
+        //         // $('.loc-layer-00').css('transform', 'translateX(0)');
+
+        //         $(s).addClass('enter');
+        //         posUpdate( 0 );
+        //         $(s).off('mousemove');
+        //     })
+        // });
+
+        $(document).ready(function () {
+
+            const m = $('.main-wrapper');
+            const s = $('.screen-layer');
+            const w = s.width();
+            const w2 = w/2;
+            // console.log( m );
+            $(window).on('mousemove', function(ev){
+                // console.log(ev.screenX);
+                screenMove(ev);
+            });
+            function screenMove(ev){
+                // console.log("MOVE: " + ev.offsetX);
+                var leftX = m.offset().left + s.position().left;
+                var dx = ev.screenX - leftX;
+                var dm = dx - w2;
+                if(dm < -w2) { dm = -w2 }
+                else
+                if(dm > w2) { dm = w2 }
+                posUpdate( -dm );
+            }
+            function posUpdate( dm ){
+                $('.screen-layer.sl07').css('transform', 'translateX('+ parseInt( dm / 1 ) +'px)');
+                $('.screen-layer.sl06').css('transform', 'translateX('+ parseInt( dm / 4 ) +'px)');
+                $('.screen-layer.sl05').css('transform', 'translateX('+ parseInt( dm / 10 ) +'px)');
+                $('.screen-layer.sl04').css('transform', 'translateX('+ parseInt( dm / 20 ) +'px)');
+                $('.screen-layer.sl03').css('transform', 'translateX('+ parseInt( dm / 50 ) +'px)');
+                $('.screen-layer.sl02').css('transform', 'translateX('+ parseInt( dm / 150 ) +'px)');
+                $('.screen-layer.sl01').css('transform', 'translateX('+ parseInt( dm / 300 ) +'px)');
+            }
+
+        });
+
+    </script>
+
+    </head>
+
+    <body>
+        <div id="root" class="main-wrapper">
+            <div class="screen-layer dashboard">
+                <div class="screen-content">
+
+                    <div class="screen-layer sl01"></div>
+                    <div class="screen-layer sl02">
+                        <div class="db-obj fountain">
+                            <div class="db-obj__img"></div>
+                            <div class="db-obj__title">Fountain</div>
+                        </div>
+                        <div class="db-obj crusade">
+                            <div class="db-obj__img"></div>
+                            <div class="db-obj__title">Crusade</div>
+                        </div>
+                    </div>
+                    <div class="screen-layer sl03">
+                        <div class="db-obj campaign">
+                            <div class="db-obj__img"></div>
+                            <div class="db-obj__title">Campaign</div>
+                        </div>
+                        <div class="db-obj castle">
+                            <div class="db-obj__img"></div>
+                            <div class="db-obj__title">Castle</div>
+                        </div>
+                    </div>
+                    <div class="screen-layer sl04">
+                        <div class="db-obj craft">
+                            <div class="db-obj__img"></div>
+                            <div class="db-obj__mask"></div>
+                            <div class="db-obj__title">Craft</div>
+                        </div>
+                    </div>
+                    <div class="screen-layer sl05">
+                        <div class="db-obj arena">
+                            <div class="db-obj__img"></div>
+                            <div class="db-obj__title">Arena</div>
+                        </div>
+                    </div>
+                    <div class="screen-layer sl06">
+                        <div class="db-obj summon">
+                            <div class="db-obj__img"></div>
+                            <div class="db-obj__title">Summon</div>
+                        </div>
+                        <div class="db-obj shop">
+                            <div class="db-obj__img"></div>
+                            <div class="db-obj__title">Shop</div>
+                        </div>
+                    </div>
+                    <div class="screen-layer sl07"></div>
+                    <div class="screen-layer iconsTb"></div>
+
+                    <div class="db-obj balloon"></div>
+                    <div class="db-obj island1"></div>
+                    <div class="db-obj crusade">
+                        <div class="db-obj__img"></div>
+                        <div class="db-obj__title">Crusade</div>
+                    </div>
+                    <div class="db-obj castle">
+                        <div class="db-obj__img"></div>
+                        <div class="db-obj__mask"></div>
+                        <div class="db-obj__title">Castle</div>
+                    </div>
+                    <div class="db-obj dragon"></div>
+                    <div class="db-obj craft">
+                        <div class="db-obj__img"></div>
+                        <div class="db-obj__mask"></div>
+                        <div class="db-obj__title">Craft</div>
+                    </div>
+                    <div class="db-obj fountain">
+                        <div class="db-obj__img"></div>
+                        <div class="db-obj__title">Fountain</div>
+                    </div>
+                    <div class="db-obj arena">
+                        <div class="db-obj__img"></div>
+                        <div class="db-obj__title">Arena</div>
+                    </div>
+<!--                     <div class="db-obj summon">
+                        <div class="db-obj__img"></div>
+                        <div class="db-obj__title">Summon</div>
+                    </div>
+                    <div class="db-obj shop">
+                        <div class="db-obj__img"></div>
+                        <div class="db-obj__title">Shop</div>
+                    </div> -->
+                    <div class="db-obj campaign">
+                        <div class="db-obj__img">
+                            <div class="db-sob c1"></div>
+                            <div class="db-sob c2"></div>
+                            <div class="db-sob c3"></div>
+                            <div class="db-sob c4"></div>
+                            <div class="db-sob c5"></div>
+                        </div>
+                        <div class="db-obj__title">Campaign</div>
+                    </div>
+                </div>
+<!--                 <div class="db-topbar">
+                    <div class="db-topbar__side">
+                        <div class="db-topbar__item topbar-icon">
+                            <div
+                                class="topbar-icon__img icn_db-daily icn_100"
+                            ></div>
+                        </div>
+                    </div>
+                    <div class="db-topbar__side">
+                        <div class="db-topbar__item topbar-icon">
+                            <div
+                                class="topbar-icon__img icn_db-messages icn_100"
+                            ></div>
+                        </div>
+                        <div class="db-topbar__item topbar-icon">
+                            <div
+                                class="topbar-icon__img icn_db-settings icn_100"
+                            ></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="db-sidebar left">
+                    <div class="db-sidebar__user player-ava">
+                        <div class="player-ava__img">
+                            <svg
+                                viewBox="0 0 91 106"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                            >
+                                <mask
+                                    id="mask0"
+                                    mask-type="alpha"
+                                    maskUnits="userSpaceOnUse"
+                                    x="0"
+                                    y="0"
+                                    width="91"
+                                    height="106"
+                                >
+                                    <path
+                                        d="M91 26.7524V79.2475L87.223 81.4279L73.9497 89.0837L45.5 105.5L17.0503 89.0837L3.77697 81.4279L0 79.2475V26.7524L3.77697 24.5721L17.0503 16.9163L45.5 0.5L73.9497 16.9163L87.223 24.5721L91 26.7524Z"
+                                        fill="#45D5FF"
+                                    ></path>
+                                </mask>
+                                <g mask="url(#mask0)">
+                                    <rect
+                                        x="-7"
+                                        y="0.5"
+                                        width="105"
+                                        height="105"
+                                        fill="url(#pattern0)"
+                                    ></rect>
+                                </g>
+                                <defs>
+                                    <pattern
+                                        id="pattern0"
+                                        patternContentUnits="objectBoundingBox"
+                                        width="1"
+                                        height="1"
+                                    >
+                                        <use
+                                            xlink:href="#image0"
+                                            transform="scale(0.00543478)"
+                                        ></use>
+                                    </pattern>
+                                    <image
+                                        id="image0"
+                                        width="184"
+                                        height="184"
+                                        xlink:href="./rc/img/temp/user-ava@2x.jpg"
+                                    ></image>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="player-ava__name">Guest 30021</div>
+                        <div class="player-ava__lvl icn_crown icn_18">857</div>
+                    </div>
+                    <div class="db-sidebar__user topbar-icon">
+                        <div class="topbar-icon__img icn_db-user icn_100"></div>
+                        <div class="topbar-icon__count">899</div>
+                    </div>
+                    <div class="db-sidebar__bnr register"></div>
+                    <div class="db-sidebar__item sidebar-icon">
+                        <div
+                            class="sidebar-icon__img icn_db-m-bond icn_100"
+                        ></div>
+                        <div class="sidebar-icon__title">
+                            <div>Акция</div>
+                            <div>Облигация</div>
+                        </div>
+                    </div>
+                    <div class="db-sidebar__item sidebar-icon">
+                        <div
+                            class="sidebar-icon__img icn_db-m-regbonus icn_100"
+                        ></div>
+                        <div class="sidebar-icon__title">
+                            <div>Бонус за</div>
+                            <div>регистрацию</div>
+                        </div>
+                    </div>
+                    <div class="db-sidebar__item sidebar-icon">
+                        <div
+                            class="sidebar-icon__img icn_db-m-novice icn_100"
+                        ></div>
+                        <div class="sidebar-icon__title">
+                            <div>Эвент</div>
+                            <div>новичка</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="db-dock">
+                    <div class="db-dock__item dock-icon">
+                        <div class="dock-icon__img icn_db-heroes icn_100"></div>
+                        <div class="dock-icon__title">Герои</div>
+                    </div>
+                    <div class="db-dock__item dock-icon">
+                        <div
+                            class="dock-icon__img icn_db-inventory icn_100"
+                        ></div>
+                        <div class="dock-icon__title">Инвентарь</div>
+                    </div>
+                    <div class="db-dock__item dock-icon">
+                        <div
+                            class="dock-icon__img icn_db-missions icn_100"
+                        ></div>
+                        <div class="dock-icon__title">Задания</div>
+                    </div>
+                    <div class="db-dock__item dock-icon">
+                        <div class="dock-icon__img icn_db-angels icn_100"></div>
+                        <div class="dock-icon__title">Ангелы</div>
+                    </div>
+                    <div class="db-dock__item dock-icon">
+                        <div class="dock-icon__img icn_db-dating icn_100"></div>
+                        <div class="dock-icon__title">Дейтинг</div>
+                    </div>
+                    <div class="db-dock__item dock-icon">
+                        <div class="dock-icon__img icn_db-bank icn_100"></div>
+                        <div class="dock-icon__title">Банк</div>
+                    </div>
+                    <div class="db-dock__item dock-icon">
+                        <div
+                            class="dock-icon__img icn_db-achievements icn_100"
+                        ></div>
+                        <div class="dock-icon__title">Достижения</div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </body>
+</html>

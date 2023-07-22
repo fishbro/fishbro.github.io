@@ -1,0 +1,67 @@
+[   
+    {
+        "id": "frontend",
+        "label": "Frontend Developer",
+        "type": "action"
+    },
+    {
+        "id": "base",
+        "label": "Base tech",
+        "type": "condition"
+    },
+    {
+        "id": "http",
+        "label": "HTTP",
+        "type": "action"
+    },
+    {
+        "id": "domain",
+        "label": "Domain",
+        "type": "action"
+    },
+    {
+        "id": "html",
+        "label": "HTML",
+        "type": "condition"
+    },
+    {
+        "id": "dom",
+        "label": "DOM",
+        "type": "action"
+    },
+    {
+        "id": "css",
+        "label": "CSS",
+        "type": "condition"
+    },
+    {
+        "id": "preprocessors",
+        "label": "Preprocessors",
+        "type": "condition"
+    },
+    {
+        "id": "js",
+        "label": "JavaScript",
+        "type": "condition"
+    },
+    {
+        "id": "syntax",
+        "label": "Syntax",
+        "type": "action"
+    },
+    {
+        "id": "domjs",
+        "label": "DOM",
+        "type": "action"
+    },
+    {
+        "id": "sass",
+        "label": "SASS",
+        "type": "action"
+    },
+    {
+        "id": "scss",
+        "label": "SCSS",
+        "type": "action"
+    }
+]

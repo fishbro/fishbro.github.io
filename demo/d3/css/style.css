@@ -1,0 +1,143 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+
+    -ms-user-select: none; 
+    -moz-user-select: none; 
+    -webkit-user-select: none; 
+    user-select: none; 
+}
+
+.container{
+    background: #202124;
+    box-shadow: inset 0px 0px 180px 0px rgba(255, 255, 255, 0.1);
+}
+
+.container,
+.container > svg{
+    width: 100%;
+    height: 100%;
+}
+
+.tick line{
+    stroke: #313135;
+}
+.tick text{
+    color: #fff;
+}
+
+.axis{
+    pointer-events: none;
+}
+.axis .domain{
+    stroke: transparent;
+}
+.edgePath path{
+    stroke: #fff;
+    fill: #fff;
+    stroke-width: 1.5;
+}
+.edgePath circle{
+    fill: #fff;
+}
+.edgePath .remove{
+    cursor: pointer;
+    opacity: 0;
+}
+.edgePath:hover .remove{
+    opacity: 1;
+}
+.layer text{
+    font-size: 12px;
+    fill: #fff;
+}
+
+.add{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: auto;
+    height: 32px;
+    max-width: 33px;
+    color: #fff;
+    background: #484b52;
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
+
+    transition: max-width 1s;
+}
+.add.opened{
+    max-width: 200px;
+}
+.add .opener{
+    padding: 0;
+    margin: 0;
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+    background: rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 16px;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+    margin-right: .9rem;
+
+    transition: transform 1s;
+}
+.add.opened .opener{
+    transform: rotate(225deg);
+}
+.add .opener:before, 
+.add .opener:after{
+    content: "";
+    display: block;
+    width: 9px;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -5px;
+    margin-top: -1px;
+}
+.add .opener:after{
+    transform: rotate(90deg);
+}
+.add .types{
+    display: flex;
+    width: 100%;
+}
+.add .types > div{
+    margin-right: 1rem;
+}
+.container svg g.links .edgePath path{
+    opacity: 1;
+    transition: opacity .3s;
+}
+.container svg g.links.hide .edgePath path{
+    opacity: 0;
+}
+.view.ready > g, 
+.layer{
+    transition: transform .7s;
+    -webkit-transition: transform .7s ease-out;
+}
+.layer .make_link{
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity .3s;
+}
+.layer .make_link:hover{
+    opacity: 1;
+}

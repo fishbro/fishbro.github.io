@@ -1,0 +1,83 @@
+@font-face {
+  font-family: 'Quinoa';
+  src: url("../fonts/quinoa/Quinoa-MediumItalic.eot");
+  src: url("../fonts/quinoa/Quinoa-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/quinoa/Quinoa-MediumItalic.woff2") format("woff2"), url("../fonts/quinoa/Quinoa-MediumItalic.woff") format("woff"), url("../fonts/quinoa/Quinoa-MediumItalic.svg#Quinoa-MediumItalic") format("svg");
+  font-weight: 500;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Quinoa';
+  src: url("../fonts/quinoa/Quinoa-BoldItalic.eot");
+  src: url("../fonts/quinoa/Quinoa-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/quinoa/Quinoa-BoldItalic.woff2") format("woff2"), url("../fonts/quinoa/Quinoa-BoldItalic.woff") format("woff"), url("../fonts/quinoa/Quinoa-BoldItalic.svg#Quinoa-BoldItalic") format("svg");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Quinoa';
+  src: url("../fonts/quinoa/Quinoa-Semibold.eot");
+  src: url("../fonts/quinoa/Quinoa-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/quinoa/Quinoa-Semibold.woff2") format("woff2"), url("../fonts/quinoa/Quinoa-Semibold.woff") format("woff"), url("../fonts/quinoa/Quinoa-Semibold.svg#Quinoa-Semibold") format("svg");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Quinoa';
+  src: url("../fonts/quinoa/Quinoa-Regular.eot");
+  src: url("../fonts/quinoa/Quinoa-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/quinoa/Quinoa-Regular.woff2") format("woff2"), url("../fonts/quinoa/Quinoa-Regular.woff") format("woff"), url("../fonts/quinoa/Quinoa-Regular.svg#Quinoa-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Quinoa';
+  src: url("../fonts/quinoa/Quinoa-LightItalic.eot");
+  src: url("../fonts/quinoa/Quinoa-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/quinoa/Quinoa-LightItalic.woff2") format("woff2"), url("../fonts/quinoa/Quinoa-LightItalic.woff") format("woff"), url("../fonts/quinoa/Quinoa-LightItalic.svg#Quinoa-LightItalic") format("svg");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Quinoa';
+  src: url("../fonts/quinoa/Quinoa-Medium.eot");
+  src: url("../fonts/quinoa/Quinoa-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/quinoa/Quinoa-Medium.woff2") format("woff2"), url("../fonts/quinoa/Quinoa-Medium.woff") format("woff"), url("../fonts/quinoa/Quinoa-Medium.svg#Quinoa-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Quinoa';
+  src: url("../fonts/quinoa/Quinoa-Light.eot");
+  src: url("../fonts/quinoa/Quinoa-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/quinoa/Quinoa-Light.woff2") format("woff2"), url("../fonts/quinoa/Quinoa-Light.woff") format("woff"), url("../fonts/quinoa/Quinoa-Light.svg#Quinoa-Light") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Quinoa';
+  src: url("../fonts/quinoa/Quinoa-Thin.eot");
+  src: url("../fonts/quinoa/Quinoa-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/quinoa/Quinoa-Thin.woff2") format("woff2"), url("../fonts/quinoa/Quinoa-Thin.woff") format("woff"), url("../fonts/quinoa/Quinoa-Thin.svg#Quinoa-Thin") format("svg");
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Quinoa-RegularItalic';
+  src: url("../fonts/quinoa/Quinoa-RegularItalic.eot");
+  src: url("../fonts/quinoa/Quinoa-RegularItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/quinoa/Quinoa-RegularItalic.woff2") format("woff2"), url("../fonts/quinoa/Quinoa-RegularItalic.woff") format("woff"), url("../fonts/quinoa/Quinoa-RegularItalic.svg#Quinoa-RegularItalic") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Quinoa';
+  src: url("../fonts/quinoa/Quinoa-Bold.eot");
+  src: url("../fonts/quinoa/Quinoa-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/quinoa/Quinoa-Bold.woff2") format("woff2"), url("../fonts/quinoa/Quinoa-Bold.woff") format("woff"), url("../fonts/quinoa/Quinoa-Bold.svg#Quinoa-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Quinoa';
+  src: url("../fonts/quinoa/Quinoa-SemiboldItalic.eot");
+  src: url("../fonts/quinoa/Quinoa-SemiboldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/quinoa/Quinoa-SemiboldItalic.woff2") format("woff2"), url("../fonts/quinoa/Quinoa-SemiboldItalic.woff") format("woff"), url("../fonts/quinoa/Quinoa-SemiboldItalic.svg#Quinoa-SemiboldItalic") format("svg");
+  font-weight: 600;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Quinoa';
+  src: url("../fonts/quinoa/Quinoa-ThinItalic.eot");
+  src: url("../fonts/quinoa/Quinoa-ThinItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/quinoa/Quinoa-ThinItalic.woff2") format("woff2"), url("../fonts/quinoa/Quinoa-ThinItalic.woff") format("woff"), url("../fonts/quinoa/Quinoa-ThinItalic.svg#Quinoa-ThinItalic") format("svg");
+  font-weight: 100;
+  font-style: italic; }
